@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="My Personal Info">
+
+        </item>
+        <item
+            android:id="@+id/nav_mybody"
+            android:icon="@drawable/body"
+            android:title="My Body" />
+        <item
+            android:id="@+id/nav_progress"
+            android:icon="@drawable/change"
+            android:title="My Progress" />
+        <item
+            android:id="@+id/nav_Target"
+            android:icon="@drawable/food"
+            android:title="My Daily Intake" />
+
+        <item
+            android:id="@+id/nav_Steps"
+            android:icon="@drawable/steps"
+            android:title="My Steps"/>
+
+
+
+        <item android:title="Other">
+            <menu>
+                <item
+                    android:id="@+id/nav_AboutUs"
+                    android:icon="@drawable/us"
+                    android:title="About Us"/>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/pref"
+            android:title="Preferences"/>
+        <item
+            android:id="@+id/userseettings"
+            android:icon="@drawable/settings"
+            android:title="User Settings"
+            />
+
+
+
+
+    </group>
+
+
+
+</menu>

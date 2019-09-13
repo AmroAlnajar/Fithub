@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/loginbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription=" "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fithublogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="213dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="52dp"
+        android:clickable="true"
+        android:onClick="RegisterHereButton"
+        android:contentDescription=" "
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/register" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/login_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="loguserin"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:textColor="@color/ap_white"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:text="amrosa14@uia.no"
+        app:layout_constraintBottom_toTopOf="@+id/RegisterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="132dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/ap_white"
+        android:inputType="textPassword"
+        android:text="Password1."
+        app:layout_constraintBottom_toTopOf="@+id/RegisterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

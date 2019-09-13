@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepagebackground"
+    tools:context=".HomeFragment">
+
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="410dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headermypersonalcalc"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/bmifield"
+        android:layout_width="157dp"
+        android:layout_height="59dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/bmifield"
+
+        android:paddingStart="60dp"
+        android:textColor="@color/ap_white"
+
+
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bmrfield"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="26,4" />
+
+    <TextView
+        android:id="@+id/bmrfield"
+        android:layout_width="157dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="64dp"
+
+        android:background="@drawable/bmrfield"
+        android:paddingStart="60dp"
+        android:textColor="@color/ap_white"
+
+        android:paddingLeft="50dp"
+
+        android:paddingTop="5dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:text="1800"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/kcalfield"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/kcalfield"
+        android:layout_width="157dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/ap_white"
+        android:background="@drawable/kcalfield"
+        android:paddingStart="60dp"
+
+        android:paddingLeft="50dp"
+
+        android:paddingTop="5dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:text="1500"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/currentweight"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fatfield"
+        android:layout_width="140dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="32dp"
+
+
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/fatfield"
+        android:paddingStart="50dp"
+        android:paddingLeft="50dp"
+
+        android:textColor="@color/ap_white"
+
+        android:paddingTop="35dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:text="20"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/currentweight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/carbfield"
+        android:layout_width="140dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="32dp"
+
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/carbfield"
+        android:paddingStart="50dp"
+        android:paddingLeft="50dp"
+
+        android:textColor="@color/ap_white"
+
+        android:paddingTop="35dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:text="40"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/kcalfield"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/proteinfield"
+        android:layout_width="140dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="32dp"
+
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/proteinfield"
+        android:paddingStart="50dp"
+        android:paddingLeft="50dp"
+        android:textColor="@color/ap_white"
+
+        android:paddingTop="35dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:text="40"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bmrfield"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/currentweight"
+        android:layout_width="180dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/ap_white"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/currentweightfield"
+        android:paddingStart="55dp"
+        android:paddingLeft="55dp"
+        android:paddingTop="35dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:text="120"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/idealweight"
+        android:layout_width="180dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/ideal_weight"
+        android:paddingStart="60dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="35dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:text="120"
+        android:textColor="@color/ap_white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

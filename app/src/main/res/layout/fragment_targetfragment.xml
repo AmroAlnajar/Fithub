@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59A7B9"
+    tools:context=".Targetfragment"
+    tools:layout_editor_absoluteY="25dp" >
+
+
+    <TextView
+        android:id="@+id/dateHeader"
+        android:layout_width="402dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+
+        android:paddingStart="125dp"
+
+        android:paddingLeft="100dp"
+
+        android:paddingTop="20dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:textSize="30sp"
+        android:textColor="@color/ap_white"
+
+
+        android:background="@drawable/datefield"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dailyCalField"
+        android:layout_width="226dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:paddingStart="70dp"
+
+        android:paddingLeft="100dp"
+
+        android:paddingTop="30dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:textSize="30sp"
+        android:textColor="@color/ap_white"
+
+        android:background="@drawable/daily_kcal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/calLeftField"
+        android:layout_width="226dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="70dp"
+
+        android:paddingLeft="100dp"
+
+        android:paddingTop="30dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:textSize="30sp"
+        android:background="@drawable/kcal_left"
+        android:textColor="@color/ap_white"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snackView" />
+
+    <EditText
+        android:id="@+id/breakfastView"
+        android:layout_width="407dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/breakfast"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/ap_white"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyCalField" />
+
+    <EditText
+        android:id="@+id/lunchView"
+        android:layout_width="407dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/lunch"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/ap_white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastView" />
+
+    <EditText
+        android:id="@+id/dinnerView"
+        android:layout_width="407dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dinner"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/ap_white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchView" />
+
+    <EditText
+        android:id="@+id/supperView"
+        android:layout_width="407dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/supper"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/ap_white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinnerView" />
+
+    <EditText
+        android:id="@+id/snackView"
+        android:layout_width="407dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/snacks"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/ap_white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supperView" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Calculate"
+        android:background="#59A7B9"
+        android:textColor="@color/ap_white"
+        app:layout_constraintEnd_toStartOf="@+id/calLeftField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snackView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
